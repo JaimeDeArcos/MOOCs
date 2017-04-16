@@ -1,0 +1,55 @@
+1. Interfacing with RPI.
+	
+	- GPIOs
+		-Inputs (buttons, light sensors...)
+		-Outputs (leds...)
+		-GPIOZero Library (Led Example) (ldr)
+ 
+2. Serial Protocols
+	
+	- UART
+	- I2C: 
+		- Read BMP180 Example:
+
+			Es necesario habilitar la interfaz i2c desde la configuracion de raspberry.
+
+			Detect devices I2C
+			$ sudo i2cdetect -y 1
+
+			Install Services:
+			$ git clone https://github.com/adafruit/Adafruit_Python_BMP.git
+			$ cd Adafruit_Python_BMP
+			$ sudo python3 setup.py install
+
+			see example code. 
+	- SPI
+
+3. Cameras
+
+	- Configuracion previa:
+		Es necesario habilitar en la configuracion la interfaz de la camar
+		Para comprobar que todo OK
+		$raspistill -o image.jpg
+ 
+ 	- Tipos de camara
+		- USB
+		- CSI(camara serial interface)
+
+	- Example to catch an image and send to a cloud(cloudinary)
+		-See Code
+
+4. Actuators
+
+	- Tipos
+		- DC Motors
+		- Servo
+		- Relays
+		- Leds
+		- Displays
+	
+	- OLED SCREEN
+	
+	- DC MOTOR:
+		- H-Bridge
+		- PWM
+

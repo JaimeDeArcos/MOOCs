@@ -1,0 +1,59 @@
+
+# Tipos de datos compuestos:
+ 
+## Listas[]:
+Las listas son colecciones de datos Mutables
+
+  my_list = [1,2,67,23]
+  
+  ### Indexar lista  
+  my_list[-1]        -->  23
+  my_list[:]         --> [1,2,67,23]
+  my_list + [1,1,1]  --> [1,2,67,23,1,1,1]   Concatenar
+  my_list.short()    --> Ordena la lista (alfabeticamente, menor a mayor si son numeros ...)
+  
+  
+  ### Mutable vs Inmutable
+  
+  **mutable**, puedo modificar su valor
+  my_list[0]   --> 1
+  my_list[0] = 2 
+  my_list[0]   --> 2
+  
+  **inmutable**, no se puede modificar un valor, por ejemplo los strings
+  text='Hola'
+  text[0]     --> 'H'
+  text[0] = 'M'    --->  EXCEPCION
+  
+  ### Otros ###
+  
+  my_list[:] = []     # Limpiar lista
+  len(my_list)        # tamaño 
+  a = [1,2,3]
+  b = ['a','b','c'] 
+  c = [a,b] 
+  c[0]     --->  [1,2,3]
+  c[0][1]  --->  2
+  
+  
+
+## Tuplas() : listas inmutables :
+
+  my_tuple = (2, "Hola", 6)
+  
+  Inmutables, no se pueden modificar, concatenar ...
+  si uno de los elementos es una lista, se podria modificar algun elemento de la lista, porque la tupla guarda la referencia, no el valor.
+  
+## Diccionarios{}: Key-Value set
+
+  my_dictionary = { 'two':2  , 'three':3 , 'nine':9 }
+  
+  Por ejemplo un listin telefonico Nombre:numeroTel
+  
+  phones = { 'Jaime':677677677 , 'Olalla': 653653653 } 
+  phones['Olalla']    ---->   653653653
+  del['Olalla']    ---> borra la entrada
+  'Olalla' in phones   ---> False  (como el contains de Java
+  phones.keys()     --> devuelve una lista de los keys (nombres)
+  phones.values()   --> devuelve una lista de los valores (telefonos)
+  

@@ -1,0 +1,67 @@
+1. Introduccion a Raspberry PI
+2. Introduccion a RaspBian
+
+	2.1 Ejecutar aplicaciones. Graficamente y por terminal
+
+	2.2 Comandos basicos de terminal: ls, cd, cp ...
+
+	2.3 Permisos:
+
+		Para ejecutar archivos, lo primero es que deben ser ejecutables y ademas tenemos que tener permiso para ejecutarlas
+
+		Ver permisos:
+		$ ls -l  
+
+		Cambiar permisos (sudo):
+		$ chmod a+x ./file_name     
+
+			(r)ead (w)rite (x)ecute
+			(a)ll (g)roup 
+		 
+
+	2.4 Procesos: 
+
+		Comando PS. Ver los procesos ejecutandose actualmente en nuestra sesion
+
+		Comando TOP. Ver TODOS los procesos del sistema
+
+	2.5 Instalar software
+
+		Actualizar la lista de pauetes
+		$ sudo apt-get update
+
+		Buscar un paquete por su nombre
+		$ apt-cache search game
+
+		Instalar un paquete
+		$ sudo apt-get install thrust
+
+		Actualizar los paquetes a su ultima version
+		$ sudo apt-get upgrade
+
+	2.6 Conexion en remoto 
+
+		SSH: protocolo para terminal en remoto. 
+		Primero hay que configurar la raspberry para ue acepte conexion ssh
+		$sudo raspi-config > 5 interfacing options > SSH 
+
+		Lo siguiente es averiguar que ip tenemos.
+		$ifconfig 
+		En mi caso la 192.168.1.55
+		Con windows podemos utilizar un progrma tipo putty para abrir una conexion ssh, con cualquier SO posix (MAC, ubuntu, unix...) usamos el comando ssh.
+
+		Usuario:pi  contraseña:raspberry
+
+	    (VNC) primero hay que habilitarlo
+	    raspi-config > 5 interfacing options > VNC
+
+	    Hay que descargar un cliente, como realvnc
+
+
+
+
+
+	
+
+
+

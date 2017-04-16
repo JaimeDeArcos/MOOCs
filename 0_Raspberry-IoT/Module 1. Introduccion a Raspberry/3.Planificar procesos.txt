@@ -1,0 +1,32 @@
+Control de procesos
+
+1. En momentos especificos:
+	-Crontab
+
+		Es un demonio que ejecuta eventos, y que podemos configurar
+
+		$ crontab -e
+
+		Revisar sintaxis pero basicamente es:
+
+			min Hora diaMes Mes diasemana Comando
+
+
+2. Cuando arranca la raspberry:
+	- Bashrc
+
+	Existen varias maneras de iniciar tareas al arrancar la raspi, 
+
+	/etc/rc.local  ,  /etc/initd , -/bashrc
+
+	Es cnveniente utilizar el que dice bash porque los otros 2 pueden hacer que no se ejecute nada mas y bloquear la raspberry.
+
+	En el directorio /home
+
+	$ nano ./.bashrc
+
+	bajamos al final y escribimos el comando que queramos que se ejecute (p.e python3 example.py)
+
+
+	nano ~/.bashrc
+

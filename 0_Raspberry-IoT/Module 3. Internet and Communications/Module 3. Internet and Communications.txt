@@ -1,0 +1,93 @@
+1. Modelo de capas de internet
+	- Protocolos de capa Red 
+		- IP
+	- Protocolos de capa Transporte
+		- TCP/UDP 
+	- Protocolos de Capa de Aplicacion  
+		- HTTP (TCP)
+		- FTP (TCP)
+		- DNS (UDP)
+
+2. PROTOCOLO HTTP:
+
+	- Campos de un mensaje http
+	- Minimal Http Request with python:
+
+		import urlib.request
+		req = urllib.request.Request('http://www.upm.es')
+		response = urllib.request.urlopen(req)
+		the_page = response.read()
+
+	- Enviar info. Ejemplo real OpenWeatherMap.
+
+		Requiere registro en openwheatherMap (Gratis)
+
+		 (Video 2 Application Protocols)
+
+3. SEGURIDAD
+
+	- Encriptacion
+	- Aplicaciones SSL: 
+		- Remote access to a computer
+		- Tunneling
+		- HTTPS
+		- Tunneling con ssh
+
+	4.OAuth2 (see diagram)
+
+	-OAuth Demo 
+		1. Instalar la libreria oauth2
+			$ sudo pip install oauth2
+
+		2. Usaremos Twitter como oauth2 Server
+			Codigo en las diapositivas
+
+4. Wireless Networks
+
+	-Wireless protocols 
+		- Bluetooth
+		- Ant+
+		- Zigbee
+		- ZWave
+		- 6LowPan
+		- WIFI
+		- 3G
+		- LoRa
+		- SigFox
+		- LTE-M, NB-IoT
+	- Wireless on Raspberry Pi 3
+
+		- WIFI:  
+			- Static vs Dinamic:
+				- DHCP
+				- How to change to Static IP
+		- 3G Stick:
+			- Huawei E303, lo reconoce como una interfaz ethernet.
+			Para recupera info del stick es facil con el comando lsusb
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+

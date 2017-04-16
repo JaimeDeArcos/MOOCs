@@ -1,0 +1,41 @@
+Por terminal : https://raspberryparatorpes.net/instalacion/poner-la-direccin-ip-fija-en-raspbian/
+
+Modo grafico: https://raspberryparatorpes.net/instalacion/poner-la-direccin-ip-fija-en-raspbian-pixel-modo-grfico-gui/
+
+
+
+############ MODO TERMINAL ##############
+Vamos a modificar el archivo
+
+/etc/network/interfaces
+
+- Hacer copia de seguridad
+$ sudo cp /etc/network/interfaces interfaces.old
+
+- Ahora editamos el fichero ejecutando lo siguiente:
+$ sudo nano -w /etc/network/interfaces
+
+- Se nos abre el editor nano. Con los cursores, las teclas de las flechas, nos movemos hasta la línea que dice:
+
+iface eth0 inet dhcp
+
+- En nuevas versiones de Raspbian también puede aparecer como:
+
+iface eth0 inet manual
+
+Y la cambiamos para que ponga nuestra el modo auto para la conexión de red auto eth0 y la IP fija, más dos direcciones adicionales que debimos apuntar cuando usamos ipconfig en Windows o ifconfig en la Raspberry
+
+  auto eth0
+
+  iface lo inet loopback
+
+  iface eth0 inet static  
+  address 192.168.1.75  
+  netmask 255.255.255.0  
+  gateway 192.168.1.1
+
+- Una vez lo hemos cambiado, hay que guardar los cambios y salir. Los comandos serían:
+
+Para Guardar el archivo con los cambios pulsar la tecla Ctrl y al mismo tiempo la letra o
+
+Para salir del editor nano pulsar la tecla Ctrl y al mismo tiempo la letra x

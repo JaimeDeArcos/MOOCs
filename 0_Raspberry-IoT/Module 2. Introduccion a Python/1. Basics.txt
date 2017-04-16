@@ -1,0 +1,7 @@
+Summary:
+- Python as interpreter
+- Basic python types
+- Aritmetics operators
+- Concept of variables
+- How to write a python script
+- If statement

@@ -1,0 +1,48 @@
+Funciones y Modulos:
+
+-Funciones:
+
+	-Tablas de simbolos:
+		Relaciona nombres a objetos (como en java)
+		a = 1
+		b = 1
+		a is b    --> True
+		a == b    --> True
+		c = [2,3]
+		d = [2,3]
+		c == d    --> True
+		c is d    --> False
+
+	- Funciones:
+
+		def fib(n):
+			"""Print a Fibonacci series up to n"""
+			a,b = 0,1
+			while a<n:
+				print(a,end=' ')
+				a,b = b,a+b
+			print()
+
+		-Parametros: 
+			Las listas se pasan por referencia, las primitivas por valor
+
+		-Return:
+			Se pueden devolver valores,listas tuplas ...
+ 
+- Modules 
+	Creamos un archivo con funciones archivo.py
+	Y para importarlo a otro archivo:
+
+	from archivo import fun1, fun2
+	fron minmax import *
+
+	Si queremos hacer referencia a otros archivos 
+
+	import sys 
+	sys.path    --> Directorio del script en ejecucion
+
+- Packages
+	Pues metiendolos en carpetas:
+		from carpeta1.carpeta2.archivo import fun1
+	Para instalar paquetes en nuestra instalacion de python, podemos utilizar pip
+	p.e   sudo pip install numpy

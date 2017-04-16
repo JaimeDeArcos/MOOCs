@@ -1,0 +1,13 @@
+Como empezar un proyecto: 2 maneras
+
+1. Instalar Angular CLI tool. Es una interfaz por linea de comandos que se puede encontrar en cli.angular.io. La idea es descargar cli desde el terminal y ya disponemos de los comandos para crear nuevos proyectos
+
+2. Clonar otro proyecto como por ejemplo el starter code ese que tengo en la carpeta (o de angular.io) o del profe del curso en el github jakblak/learn-angular-2
+
+Con la via 2: lo primero:
+Navemgamos en el prompr a la carptar y escribimos el comando:
+	npm install
+Esto descarga todas las dependencias que necesitamos. Lo siguiente:
+	npm start
+
+

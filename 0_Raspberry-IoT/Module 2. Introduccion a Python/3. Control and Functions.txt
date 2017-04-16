@@ -1,0 +1,9 @@
+ Control and Functions
+
+Control de flujo
+  Loops: while, for ...in
+  Decision:  if.elif..else
+  breaks: break continue and else
+
+Expresions:
+  Boolean 
