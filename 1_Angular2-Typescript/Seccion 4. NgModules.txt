@@ -1,0 +1,33 @@
+Seccion 4. NgModules
+
+11. Introduccion.
+
+12. NgModules Explained
+
+	- NgModules nos sirven para organizar nuestra aplicacion.
+
+	app.module.tsfile, contiene todos los modules, components y pipes y service
+
+	En el archivo vemos comoimportamos los 3 primeos modulos que utilizamos 
+
+	Decorators son funciones que añaden extra metadata a  la clase. Siempre comienzan con un @ y el nombre del decorador.
+
+	@NgModule({
+		imports: [BrowserModule] ,
+		decorations:[AppComponent], 
+		bootstrap: [AppComponent]
+	} )
+
+13. Bootstrapping:
+	
+	Proceso necesario para poenes juntas las minimas piezas necesarias para correr una aplicacion Angular
+
+	Una vez creado nuestro app.module.ts, el siguiente archivo es el main.ts
+
+		import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+		import { AppModule } from './app.module';
+		
+		const platform = platformBrowserDynamic();
+
+		platform.bootstrapModule(AppModule);
+ 

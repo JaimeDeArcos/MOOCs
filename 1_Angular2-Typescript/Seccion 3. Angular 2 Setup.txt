@@ -1,0 +1,48 @@
+Seccion 3 : Angular 2 Setup
+
+8. Entorno de desarrollo 
+
+	- Node.js
+	- Editor: Sublime
+	- Plugin para typescript
+
+	Una vez instalado node.js, se abre un prompt y se escribe node -v para comprobar todo ok
+
+	Para instalar el plugin en sublime, necesitamos instalar package control y luego:
+	CNTROL+SHIFT+P > Package Control: install package > Typescript
+	Esto nos proporciona autocompletado y error checking
+
+	En el terminl de node.js, escribmos 
+	install typescript typings -g
+
+	La g indica ue guarde una copia local de cada libreria.
+  
+9. Como empezar un proyecto: 2 maneras
+
+	1. Instalar Angular CLI tool. Es una interfaz por linea de comandos que se puede encontrar en cli.angular.io. La idea es descargar cli y desde el terminal y ya disponemos de los comandos para crear nuevos proyectos
+
+	2. Para crear un nuevo proyecto:
+
+		Clonar otro proyecto como por ejemplo el starter code, que podemos encontrar en:
+			- Esta carpeta.
+			- Angular.io
+			- O del profe de este curso (github jakblak/learn-angular-2)
+
+	    Con el starter pack de esta carpeta:
+	    	- Navegamos en el promp a la carpeta y escribimos el comando:
+			$ npm install
+			Esto descarga todas las dependencias que necesitamos. Lo siguiente:
+		    $ npm start
+		    Esto arranca como "un servidor" y ya las modificaciones las pilla en caliente
+
+10. Modules:
+
+	- Cada vez que creamos un archivo estamos creando un modulo para el. Todos los archivos actuan como su propio sistema
+
+	- Cuando hemos construido nuestra starter app, hemos creado un system.js config file
+
+	- El proposito de este archivo es como un module loader
+		-Algo asi como pom.xml en maven
+
+	- Podemos hacer import y export
+

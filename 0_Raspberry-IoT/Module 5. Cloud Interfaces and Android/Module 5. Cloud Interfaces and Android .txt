@@ -27,7 +27,9 @@
 		-Que es carriots? Creamos una cuenta (JaimeDeArcos:nP2)
 		- En la pestaña Device, Creamos un device y apuntamos el id de developer:
 			RasPi-Home@JaimeDeArcos.JaimeDeArcos
-		-En la pestaña data: vemos una tabla de
+		- Ejemplo get.py (Min 4:04) como hacer una llamada GET desde la raspberry
+		- Ejemplo post.py (Min 9:20)
+ 
 
 
 3. Introducción a las apps de movil
