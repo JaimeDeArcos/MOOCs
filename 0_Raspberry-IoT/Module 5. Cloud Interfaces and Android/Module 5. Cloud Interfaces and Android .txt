@@ -1,7 +1,35 @@
-1. Introduction al Cloud
+1. Introducción al Cloud
+	
+	- WebServices (XML,JSON):
+		REST - Restful
+		Verbos: Get-Post-Put-Delete
+	
+	- Caracteristicas REST 
+		- Estructura Cliente-Servidor, 
+		- Stateles
+		- Uniform interface
+	- Como operar con REST? 
+		- Librerias . Curl, Pycurl, Urlib...
+		- Web : Hurl:  hurl.it
+	- Comandos
+		-GET:
+			-Destination
+			-Headers
+				- Content-Type:application/json
+				- apikey. a2ci4jf88jen
+			-Parameters: order:-1, "max:100"
+		-POST:
+			-Parameters in the Body. in xml or json format
+  
+2. Ejemplo prático de REST
 
-2. Ejemplo pratico de REST
+	- Conectar RPI to Carriots
+		-Que es carriots? Creamos una cuenta (JaimeDeArcos:nP2)
+		- En la pestaña Device, Creamos un device y apuntamos el id de developer:
+			RasPi-Home@JaimeDeArcos.JaimeDeArcos
+		-En la pestaña data: vemos una tabla de
 
-3. Introduccion a las apps de movil
 
-4. Ejemplo pratico de aplicaion movil
+3. Introducción a las apps de movil
+
+4. Ejemplo práctico de aplicación movil
