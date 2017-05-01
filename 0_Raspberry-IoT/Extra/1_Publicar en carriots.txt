@@ -1,0 +1,10 @@
+- En primer lugar necesitamos una cuenta en la plataforma, es gratuita (carriots.com)
+
+- A continuacion vamos a ver 4 ejemplos 
+
+Las partes mas importante en carriots son device y data:
+
+EN devices configuramos uno y nos apuntamos el id Developer
+
+RasPi-Home@JaimeDeArcos.JaimeDeArcos
+
